@@ -1,4 +1,4 @@
-### OpenPDFLibrary
+# OpenPDFLibrary
 
 ## 📋 Description
 
@@ -39,4 +39,4 @@ Get PDF Metadata    # Returns the PDF header
         Log    Xhtml -> ${content_xhtml}
         Log    Meta -> ${meta}
     ```
-  # 📦 [GitHub](https://github.com/BrunoMoraes-Z/robotframework-openpdf)
+  ### 📦 [GitHub](https://github.com/BrunoMoraes-Z/robotframework-openpdf)
