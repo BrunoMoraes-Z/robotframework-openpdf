@@ -1,12 +1,11 @@
 [tool.poetry]
 name = "OpenPDFLibrary"
-version = "0.1.2"
+version = "0.1.0"
 description = ""
 authors = ["Bruno Moraes <moraes.7bruno@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-beautifulsoup4 = "^4.9.1"
 tika = "^1.24"
 robotframework = "^3.0"
 
