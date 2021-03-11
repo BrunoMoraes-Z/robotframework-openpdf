@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "robotframework-openpdf"
-version = "0.1.0"
+name = "OpenPDFLibrary"
+version = "0.1.2"
 description = ""
 authors = ["Bruno Moraes <moraes.7bruno@gmail.com>"]
 

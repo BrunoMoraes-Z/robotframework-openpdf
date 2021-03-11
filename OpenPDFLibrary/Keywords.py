@@ -1,21 +1,13 @@
 import os
 import re
 from tika import parser
-from bs4 import BeautifulSoup
 
 from robot.api.deco import keyword
 from robot.libraries.BuiltIn import BuiltIn
 
-class OpenPDF(object):
-
+class Keywords():
 
   ROBOT_LIBRARY_SCORE = 'GLOBAL'
-  ROBOT_LIBRARY_VERSION = '0.1.0'
-
-
-  def __init__(self, curpath=None):
-    if curpath is None:
-      self.curpath = os.path.dirname(os.path.abspath(__file__))
 
 
   @keyword(name='Get PDF Text')
@@ -40,11 +32,10 @@ class OpenPDF(object):
 
 
   def __valid_file(self, file):
-    filepath = f'{self.curpath}\\{file}'
-    if filepath is None:
-      raise Exception("Deve ser informado um argumento válido.")
-    if os.path.isdir(filepath):
-      raise Exception("Deve ser informado um arquivo válido")
-    elif '.pdf' not in filepath:
-      raise Exception("Deve ser informado um arquivo no formato .pdf")
-    return filepath
+    if file is None:
+      raise Exception("A valid argument must be entered")
+    if os.path.isdir(file):
+      raise Exception("A valid file must be entered")
+    elif '.pdf' not in file:
+      raise Exception("A file in .pdf format must be informed")
+    return file
